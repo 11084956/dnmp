@@ -236,7 +236,7 @@ services:
     volumes:
       - ${DATA_DIR}/esdata:/usr/share/elasticsearch/data
       - ${ELASTICSEARCH_CONF_FILE}:/usr/share/elasticsearch/config/elasticsearch.yml
-      - ${ELASTICSEARCH_LOG_DIR}:/var/log/elasticsearch/:rw
+      - ${ELASTICSEARCH_LOG_DIR}:/usr/share/elasticsearch/:rw
     hostname: elasticsearch
     restart: always
     ports:
